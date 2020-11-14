@@ -13,7 +13,7 @@ add_executable(appbundle main.cc)
 target_compile_options(appbundle PRIVATE
     -O2 -g -Wall -Wextra -Werror -Wpedantic
 )
-set(STATIC_LINK_LIBCXX -static)
+set(STATIC_LINK_LIBCXX )
 if (APPLE)
     unset(STATIC_LINK_LIBCXX)
 endif()
